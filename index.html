@@ -16,7 +16,6 @@
             src: url(Assets/fonts/SourceSansPro-Regular.ttf);
         }
 
-
         body {
             box-sizing: border-box;
             padding: 0;
@@ -27,6 +26,7 @@
 
         .container {
             position: relative;
+            box-shadow: rgb(204, 204, 204) 0px 0px 10px 0px;
         }
 
         h1 {
@@ -45,11 +45,32 @@
             position: absolute;
             z-index: 1;
             font-family: "SourceSansPro-Light";
-            font-size: 42px;
+            font-size: 46px;
             top: 47px;
-            left: 75px;
+            left: 83px;
             color: #FFFFFF;
+        
         }
+
+        #flip {
+            color: #EE4023;
+            font-size: 20px;
+            line-height: 0.7;
+            margin-left: 40px;
+            border: 2px solid red;
+            border-radius: 0;
+            width: 195px;
+         }
+
+         #change {
+            color: #EE4023;
+            font-size: 20px;
+            line-height: 0.7;
+            margin-left: 30px;
+            border: 2px solid red;
+            border-radius: 0;
+            width: 195px;
+         }
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -64,32 +85,77 @@
         <div class="row">
             <div class="col-md-12">
                 <img class="img-responsive img-fluid w-100 heroBanner" src="Assets/hero.jpg" alt="Movie Maker Home">
-                <h1 class="text-over-image">Turn your videos & <br>pictures into a movie <br>with just one click</h1>
+                <h1 class="text-over-image text-responsive">Turn your videos & <br>pictures into a movie <br>with just
+                    one click</h1>
 
             </div>
-            <!-- <div class="text-block">
-                <h1>Turn your videos & <br>pictures into a movie <br>with just one click</h1>
-            </div> -->
         </div>
-        <!-- <div class="row">
-            <div class="col-md-5">
-                <img src="Assets/computer1.jpg" alt="Movie Maker Home">
+        <div class="row p-0 m-0 bg-white text-center pb-5"
+            style="font-size: 52px; color: #0F0F0F; font-family: SourceSansPro-Light;">
+            <div class="col-md-12">
+                <h1>Tell amazng stories</h1>
+                <h3>Editing software that brings your videos and pictures together in one movie.</h3>
+            </div>
 
+        </div>
+        <div class="row py-3">
+            <div class="col-md-4">
+                <img class="img-responsive" src="Assets/computer1.jpg" alt="Computer 1 Images">
             </div>
-            <div class="col-md-7">
+            <div class="col-md-8 px-5 py-4">
+                <p class="text-left"
+                    style="font-size: 24px; color: #EE4023; font-family: SourceSansPro-Regular; margin-left: 40px; ">
+                    Customize Your Moments
+                </p>
+                <p class="text-left"
+                    style="font-size: 18px; color: #0F0F0F; font-family: SourceSansPro-Light; margin-left: 40px; ">
+                    Bacon ipsum dolor amet laborum drumstick andouille <br>cupim shoulder commodo t-bone ex minim pork
+                    loin <br>velit.Aliquip fatback fugiat proident aliqua culpa cillum <br>
+                    minim jerky meatloaf.Drumstick kevin et velit boudin nisi <br>ea salami culpa ad.
+                </p>
+
+                <button id="flip" type="button" class="btn btn-outline-danger btn-lg text-left">flip</button>
             </div>
         </div>
-    <div class="row">
-        <img src="Assets/closing-photo.jpg" alt="Movie Maker Home"> -->
+
+        <div class="row py-5" style="margin-top: 10vh;">
+            <div class="col-md-4 order-md-2 px-0">
+                <img class="img-responsive img-fluid w-100" style="margin-left: -15px; " src="Assets/computer2.jpg" alt="Computer 2 Images">
+            </div>
+            <div class="col-md-8 px-5 py-4 order-md-1">
+                <p class="text-left" style="font-size: 24px; color: #EE4023; font-family: SourceSansPro-Regular; margin-left: 30px; ">
+                    Automatic Crop & Zoom  <!-- HERE WE CAN ADD MARGIN UP TO 50PX TO REMOVE SOME SPACE BETWEEN SECONG IMG ND SECOND TEXT-->s
+                </p>
+                <p class="text-left"
+                    style="font-size: 18px; color: #0F0F0F; font-family: SourceSansPro-Light; margin-left: 30px; ">
+                   Meatball ut deserunt as beef ribs.Anim spare ribs kevin mollit.<br>Ut ham hock mollit, leberkas irure ex lorem corned beef<br>reprehen derit.Corned beef
+                   beef ribs turducken sausage short<br> ribs in, cupidatat culpa. T-bone bacon sausage, boudin et <br>occaecat fatback ball tip cupim.
+                </p>
+
+                <button id="change" type="button" class="btn btn-outline-danger btn-lg text-left">Change</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive img-fluid w-100" src="Assets/closing-photo.jpg" alt="Closing Image">
+            </div>
+
+         </div>
+
+
+    </div>
 
     </div>
 
     <!-- FOOTER START -->
-    <footer class="container px-0">
+    <footer class="container px-0 pt-2">
         <div class="row">
             <div class="col-md-12">
                 <img class="img-responsive img-fluid w-100" src="Assets/geometric-band.jpg"
                     alt="Movie Make Closing image">
+                    <!-- <div></div> -->
+                    <!-- HERE FOR THAT BOX -->
             </div>
         </div>
     </footer>
@@ -97,8 +163,6 @@
 
     <!-- HERO BANNER END -->
 
-
-    <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
