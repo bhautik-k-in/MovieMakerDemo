@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        @font-face {
+            font-family: "SourceSansPro-Light";
+            src: url(Assets/fonts/SourceSansPro-Light.ttf);
+        }
+
+        @font-face {
+            font-family: "SourceSansPro-Regular";
+            src: url(Assets/fonts/SourceSansPro-Regular.ttf);
+        }
+
+        body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            background-size: contain;
+            overflow-x: hidden;
+        }
+
+        .container {
+            position: relative;
+            box-shadow: rgb(204, 204, 204) 0px 0px 10px 0px;
+        }
+
+        h1 {
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            background: transparent;
+
+        }
+
+        .heroBanner {
+            z-index: 0;
+        }
+
+        .text-over-image {
+            position: absolute;
+            z-index: 1;
+            font-family: "SourceSansPro-Light";
+            font-size: 46px;
+            top: 47px;
+            left: 83px;
+            color: #FFFFFF;
+        
+        }
+
+        #flip {
+            color: #EE4023;
+            font-size: 20px;
+            line-height: 0.7;
+            margin-left: 40px;
+            border: 2px solid red;
+            border-radius: 0;
+            width: 195px;
+         }
+
+         #change {
+            color: #EE4023;
+            font-size: 20px;
+            line-height: 0.7;
+            margin-left: 30px;
+            border: 2px solid red;
+            border-radius: 0;
+            width: 195px;
+         }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Movie Maker | Home </title>
+</head>
+
+<body>
+    <!-- HERO BANNER START -->
+    <div class="container border px-0">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive img-fluid w-100 heroBanner" src="Assets/hero.jpg" alt="Movie Maker Home">
+                <h1 class="text-over-image text-responsive">Turn your videos & <br>pictures into a movie <br>with just
+                    one click</h1>
+
+            </div>
+        </div>
+        <div class="row p-0 m-0 bg-white text-center pb-5"
+            style="font-size: 52px; color: #0F0F0F; font-family: SourceSansPro-Light;">
+            <div class="col-md-12">
+                <h1>Tell amazng stories</h1>
+                <h3>Editing software that brings your videos and pictures together in one movie.</h3>
+            </div>
+
+        </div>
+        <div class="row py-3">
+            <div class="col-md-4">
+                <img class="img-responsive" src="Assets/computer1.jpg" alt="Computer 1 Images">
+            </div>
+            <div class="col-md-8 px-5 py-4">
+                <p class="text-left"
+                    style="font-size: 24px; color: #EE4023; font-family: SourceSansPro-Regular; margin-left: 40px; ">
+                    Customize Your Moments
+                </p>
+                <p class="text-left"
+                    style="font-size: 18px; color: #0F0F0F; font-family: SourceSansPro-Light; margin-left: 40px; ">
+                    Bacon ipsum dolor amet laborum drumstick andouille <br>cupim shoulder commodo t-bone ex minim pork
+                    loin <br>velit.Aliquip fatback fugiat proident aliqua culpa cillum <br>
+                    minim jerky meatloaf.Drumstick kevin et velit boudin nisi <br>ea salami culpa ad.
+                </p>
+
+                <button id="flip" type="button" class="btn btn-outline-danger btn-lg text-left">flip</button>
+            </div>
+        </div>
+
+        <div class="row py-5" style="margin-top: 10vh;">
+            <div class="col-md-4 order-md-2 px-0">
+                <img class="img-responsive img-fluid w-100" style="margin-left: -15px; " src="Assets/computer2.jpg" alt="Computer 2 Images">
+            </div>
+            <div class="col-md-8 px-5 py-4 order-md-1">
+                <p class="text-left" style="font-size: 24px; color: #EE4023; font-family: SourceSansPro-Regular; margin-left: 30px; ">
+                    Automatic Crop & Zoom  <!-- HERE WE CAN ADD MARGIN UP TO 50PX TO REMOVE SOME SPACE BETWEEN SECONG IMG ND SECOND TEXT-->s
+                </p>
+                <p class="text-left"
+                    style="font-size: 18px; color: #0F0F0F; font-family: SourceSansPro-Light; margin-left: 30px; ">
+                   Meatball ut deserunt as beef ribs.Anim spare ribs kevin mollit.<br>Ut ham hock mollit, leberkas irure ex lorem corned beef<br>reprehen derit.Corned beef
+                   beef ribs turducken sausage short<br> ribs in, cupidatat culpa. T-bone bacon sausage, boudin et <br>occaecat fatback ball tip cupim.
+                </p>
+
+                <button id="change" type="button" class="btn btn-outline-danger btn-lg text-left">Change</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive img-fluid w-100" src="Assets/closing-photo.jpg" alt="Closing Image">
+            </div>
+
+         </div>
+
+
+    </div>
+
+    </div>
+
+    <!-- FOOTER START -->
+    <footer class="container px-0 pt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive img-fluid w-100" src="Assets/geometric-band.jpg"
+                    alt="Movie Make Closing image">
+                    <!-- <div></div> -->
+                    <!-- HERE FOR THAT BOX -->
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- HERO BANNER END -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
